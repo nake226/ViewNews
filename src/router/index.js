@@ -16,7 +16,7 @@ let router = new Router({
     },
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/hello'
     },
     {
       path: '/login',
