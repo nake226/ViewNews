@@ -12,11 +12,15 @@ let router = new Router({
   routes: [
     {
       path: '*',
-      redirect: '/hello'
+      redirect: '/'
     },
     {
       path: '/',
-      redirect: '/hello'
+      name: 'Hello',
+      component: Hello,
+      meta: {
+        requiresAuth: true
+      }
     },
     {
       path: '/login',
@@ -28,14 +32,6 @@ let router = new Router({
       name: 'SignUp',
       component: SignUp
     },
-    {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello,
-      meta: {
-        requiresAuth: true
-      }
-    }
   ]
 })
 
