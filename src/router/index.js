@@ -18,9 +18,6 @@ let router = new Router({
       path: '/',
       name: 'Hello',
       component: Hello,
-      meta: {
-        requiresAuth: true
-      }
     },
     {
       path: '/login',
